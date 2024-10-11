@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Where in the World? | Frontend Mentor Challenge</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="data.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="#">Where in the world?</a></h1>
+      <button>Dark Mode</button>
+    </header>
+    <main>
+      <div class="search-bar">
+        <input type="search" />
+        <select name="region" id="region-select">
+          <option value="" selected disabled hidden>Filter by Region</option>
+          <option value="africa">Africa</option>
+          <option value="america">America</option>
+          <option value="asia">Asia</option>
+          <option value="europe">Europe</option>
+          <option value="oceania">Oceania</option>
+        </select>
+      </div>
+      <ul class="country-list">
+        <li class="country-entry">
+          <img class="country-flag" src="" />
+          <h2 class="country-name">Sample Country</h2>
+          <ul class="country-stats">
+            <li>
+              <strong>Population:</strong>
+              <span class="country-population">100,000,000</span>
+            </li>
+            <li>
+              <strong>Region:</strong>
+              <span class="country-region">Europe</span>
+            </li>
+            <li>
+              <strong>Capital:</strong>
+              <span class="country-capital">Berlin</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
