@@ -10,6 +10,7 @@
 
     <script src="data.js" defer></script>
     <script src="theme.js" defer></script>
+    <script src="filter.js" defer></script>
 
     <!-- ionicons -->
     <script
@@ -62,10 +63,11 @@
             name="region"
             id="region-select"
             class="ui-component region-select"
+            onchange="updateFilter()"
           >
             <option value="" selected disabled hidden>Filter by Region</option>
             <option value="africa">Africa</option>
-            <option value="america">Americas</option>
+            <option value="americas">Americas</option>
             <option value="antarctic">Antarctic</option>
             <option value="asia">Asia</option>
             <option value="europe">Europe</option>
@@ -75,7 +77,7 @@
       </div>
       <ul class="country-list centered" id="country-list"></ul>
     </main>
-    <footer class="footer">
+    <footer class="footer header-wrapper">
       <div class="attribution">
         Challenge by
         <a
