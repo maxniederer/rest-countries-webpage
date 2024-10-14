@@ -11,23 +11,45 @@
     <script src="data.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1><a href="#">Where in the world?</a></h1>
-      <button>Dark Mode</button>
+    <header class="header-wrapper">
+      <div class="header centered">
+        <h1><a href="#">Where in the world?</a></h1>
+        <button class="btn">
+          <ion-icon name="moon-outline"></ion-icon>
+          Dark Mode
+        </button>
+      </div>
     </header>
     <main>
-      <div class="search-bar">
-        <input type="search" />
-        <select name="region" id="region-select">
-          <option value="" selected disabled hidden>Filter by Region</option>
-          <option value="africa">Africa</option>
-          <option value="america">America</option>
-          <option value="asia">Asia</option>
-          <option value="europe">Europe</option>
-          <option value="oceania">Oceania</option>
-        </select>
+      <div class="search-bar-wrapper centered">
+        <div class="search-bar">
+          <div class="search-box">
+            <label for="search-country-name" class="search-icon">
+              <ion-icon name="search-outline"></ion-icon>
+            </label>
+            <input
+              type="search"
+              name="name"
+              id="search-country-name"
+              class="search-field ui-component"
+              placeholder="Search for a country..."
+            />
+          </div>
+          <select
+            name="region"
+            id="region-select"
+            class="ui-component region-select"
+          >
+            <option value="" selected disabled hidden>Filter by Region</option>
+            <option value="africa">Africa</option>
+            <option value="america">America</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+          </select>
+        </div>
       </div>
-      <ul class="country-list" id="country-list">
+      <ul class="country-list centered" id="country-list">
         <!-- <li class="country-entry">
           <img class="country-flag" src="" />
           <h2 class="country-name">Sample Country</h2>
@@ -48,5 +70,15 @@
         </li> -->
       </ul>
     </main>
+
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

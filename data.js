@@ -13,21 +13,23 @@ async function getFullCountryList() {
       const newCountry = document.createElement("li");
       newCountry.classList.add("country-entry");
       newCountry.innerHTML = `<img class="country-flag" src="${e.flags.png}" alt="${e.flags.alt}" />
-        <h2>${e.name.common}</h2>
-        <ul class="country-stats">
-          <li>
-            <strong>Population:</strong>
-            <span class="country-population">${e.population}</span>
-          </li>
-          <li>
-            <strong>Region:</strong>
-            <span class="country-region">${e.region}</span>
-          </li>
-          <li>
-            <strong>Capital:</strong>
-            <span class="country-capital">${e.capital[0]}</span>
-          </li>
-        </ul>`;
+        <div class="country-desc">
+          <h2>${e.name.common}</h2>
+          <ul class="country-stats">
+            <li>
+              <strong>Population:</strong>
+              ${e.population}
+            </li>
+            <li>
+              <strong>Region:</strong>
+              ${e.region}
+            </li>
+            <li>
+              <strong>Capital:</strong>
+              ${e.capital[0]}
+            </li>
+          </ul>
+        </div>`;
       document.getElementById("country-list").appendChild(newCountry);
     });
   } catch (err) {
