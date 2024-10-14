@@ -125,6 +125,7 @@ h1 {
 .region-select {
   /* hacky way to add padding to the select arrow .. wont work otherwise */
   border-right: 16px solid transparent;
+  cursor: pointer;
 }
 
 option {
@@ -146,6 +147,21 @@ option {
   overflow: hidden;
 
   width: 264px;
+  cursor: pointer;
+
+  transform: scale(1);
+
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.country-entry:hover {
+  transform: scale(1.05);
+}
+
+.country-link {
+  color: var(--color-text);
 }
 
 .country-flag {

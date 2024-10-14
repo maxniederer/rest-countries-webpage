@@ -10,6 +10,18 @@
 
     <script src="data.js" defer></script>
     <script src="theme.js" defer></script>
+
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      defer
+    ></script>
   </head>
   <body>
     <header class="header-wrapper">
@@ -53,33 +65,15 @@
           >
             <option value="" selected disabled hidden>Filter by Region</option>
             <option value="africa">Africa</option>
-            <option value="america">America</option>
+            <option value="america">Americas</option>
+            <option value="antarctic">Antarctic</option>
             <option value="asia">Asia</option>
             <option value="europe">Europe</option>
             <option value="oceania">Oceania</option>
           </select>
         </div>
       </div>
-      <ul class="country-list centered" id="country-list">
-        <!-- <li class="country-entry">
-          <img class="country-flag" src="" />
-          <h2 class="country-name">Sample Country</h2>
-          <ul class="country-stats">
-            <li>
-              <strong>Population:</strong>
-              <span class="country-population">100,000,000</span>
-            </li>
-            <li>
-              <strong>Region:</strong>
-              <span class="country-region">Europe</span>
-            </li>
-            <li>
-              <strong>Capital:</strong>
-              <span class="country-capital">Berlin</span>
-            </li>
-          </ul>
-        </li> -->
-      </ul>
+      <ul class="country-list centered" id="country-list"></ul>
     </main>
     <footer class="footer">
       <div class="attribution">
@@ -99,15 +93,5 @@
         >.
       </div>
     </footer>
-
-    <!-- ionicons -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
